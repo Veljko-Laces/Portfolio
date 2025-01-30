@@ -44,3 +44,80 @@
             </div> 
         </div>
     </div>
+    <div class="competences" id="competences">
+        <h2>Compétences</h2>
+            <div class="competences-contenu">
+                <div class="competences-categorie">
+                    <h3>Frontend</h3>
+                    <div class="sous-competences">
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/html.svg" alt="" class="icones">
+                            <p class="text-lg">HTML</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/css.svg" alt=""  class="icones">
+                            <p class="text-lg">CSS</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/javascript.svg" alt=""  class="icones">
+                            <p class="text-lg">JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="competences-categorie">
+                    <h3>Backend</h3>
+                    <div class="sous-competences">
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/php.svg" alt=""  class="icones">
+                            <p class="text-lg">PHP</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/mysql.svg" alt=""  class="icones">
+                            <p class="text-lg">MySql</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/symfony.svg" alt=""  class="icones">
+                            <p class="text-lg">Symfony</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="competences-categorie">
+                    <h3>Design</h3>
+                    <div class="sous-competences">
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/figma.svg" alt=""  class="icones">
+                            <p class="text-lg">Figma</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/photoshop.svg" alt=""  class="icones">
+                            <p class="text-lg">Photoshop</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/illustrator.svg" alt=""  class="icones">
+                            <p class="text-lg">Illustrator</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/indesign.svg" alt=""  class="icones">
+                            <p class="text-lg">InDesign</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="competences-categorie">
+                    <h3>Autre</h3>
+                    <div class="sous-competences">
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/github-black.svg" alt=""  class="icones">
+                            <p class="text-lg">Git</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/bruno.svg" alt=""  class="icones">
+                            <p class="text-lg">Bruno</p>
+                        </div>
+                        <div class="competence-et-logo">
+                            <img src="./assets/images/svg/netlifly.svg" alt=""  class="icones">
+                            <p class="text-lg">Netlifly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
