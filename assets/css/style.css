@@ -314,3 +314,11 @@ input {
     flex-direction: column;
     gap: 4px;
 }
+
+footer {
+    border-top: solid var(--gris) 1px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
