@@ -230,3 +230,6 @@
         <p class="text-base">Conçu et réalisé avec passion par Veljko Laces.</p>
         <p class="text-base">©Copyright 2025 - Veljko Laces</p>
     </footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
