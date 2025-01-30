@@ -182,3 +182,47 @@
             </div>
         </div>
     </div>
+    <div class="contact-logo">
+        <img class="logo-desktop icones" src="./assets/images/svg/logo-mobile.svg" alt="">
+        <div class="contact" id="contact">
+            <div class="contact-title-text">
+                <h2>Contact</h2>
+                <p class="text-lg">N'hésitez pas à me contacter par email.</p>
+            </div>
+            <div class="formulaire-de-contact">
+                <div class="champ">
+                    <div class="champ-label">
+                        <label for="Nom" class="text-base">Nom</label>
+                        <input type="text" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="champ-label">
+                        <label for="Email" class="text-base">Email</label>
+                        <input type="text" placeholder="Entrez votre email">
+                    </div>
+                    <div class="champ-label">
+                        <label for="Message" class="text-base">Message</label>
+                        <input type="text" placeholder="Rédigez votre message">
+                    </div>
+                </div>
+                <button class="TEXT-base-boutton btn-desktop">Envoyer</button>
+                <div class="accueil-btns">
+                    <button class="accueil-btn">
+                        <img src="./assets/images/svg/whatsapp.svg" alt="" class="icones"> 
+                        <p class="TEXT-base-boutton">Whatsapp</p>
+                    </button>
+                    <button class="accueil-btn">
+                        <img src="./assets/images/svg/linkedin.svg" class="icones" alt="" class="icones">
+                        <p class="TEXT-base-boutton">Linkedin</p>
+                    </button>
+                    <button class="accueil-btn">
+                        <img src="./assets/images/svg/mail.svg" alt="" class="icones">
+                        <p class="TEXT-base-boutton">veljkolaces123@gmail.com</p>
+                    </button>
+                    <button class="accueil-btn">
+                        <img src="./assets/images/svg/github.svg" alt="" class="icones">
+                        <p class="TEXT-base-boutton">Github</p>
+                    </button>
+                </div> 
+            </div>
+        </div>
+    </div>

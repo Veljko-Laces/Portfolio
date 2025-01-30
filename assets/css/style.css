@@ -273,3 +273,44 @@ input {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
 }
+
+.contact {
+    padding: 160px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+    width: 232px;
+    height: 104px;
+}
+
+.contact-title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulaire-de-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.champ-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
