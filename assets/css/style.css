@@ -322,3 +322,120 @@ footer {
     flex-direction: column;
     gap: 40px;
 }
+
+@media screen and (min-width: 767px) {
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+        line-height: 2.7rem;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.3rem;
+        font-weight: 700;
+    }
+
+    .text-lg {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+
+    .text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .TEXT-base-pillule {
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+    }
+
+    nav {
+        padding: 32px 64px;
+        gap:42px;
+    }
+
+    .accueil {
+        padding: 200px 64px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .accueil-contenu {
+        width: 560px;
+        height: 385px;
+    }
+
+    .competences {
+        padding: 200px 64px;
+    }
+
+    .competences-contenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .projets {
+        padding: 200px 64px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-logo {
+        padding: 0px 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact {
+        padding: 200px 64px;
+    }
+
+    .contact-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-desktop{
+        display: block;
+        width: 425px;
+        height: 191px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-desktop {
+        width: fit-content;
+        padding: 8px 16px;
+    }
+
+    .sous-competences {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        padding: 40px 64px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
