@@ -121,3 +121,64 @@
                 </div>
             </div>
     </div>
+    <div class="projets" id="projets">
+        <h2>Projets</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="content">
+                    <div class="card-title-redirection">
+                        <h3>Title</h3>
+                        <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="" class="icones"></a>
+                    </div>
+                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                </div>
+                <div class="card-skills">
+                    <div class="pillule">HTML</div>
+                    <div class="pillule">CSS</div>
+                    <div class="pillule">Netlifly</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="card-title-redirection">
+                        <h3>Title</h3>
+                        <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="" class="icones"></a>
+                    </div>
+                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                </div>
+                <div class="card-skills">
+                    <div class="pillule">HTML</div>
+                    <div class="pillule">CSS</div>
+                    <div class="pillule">Netlifly</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="card-title-redirection">
+                        <h3>Title</h3>
+                        <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="" class="icones"></a>
+                    </div>
+                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                </div>
+                <div class="card-skills">
+                    <div class="pillule">HTML</div>
+                    <div class="pillule">CSS</div>
+                    <div class="pillule">Netlifly</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="card-title-redirection">
+                        <h3>Title</h3>
+                        <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="" class="icones"></a>
+                    </div>
+                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                </div>
+                <div class="card-skills">
+                    <div class="pillule">HTML</div>
+                    <div class="pillule">CSS</div>
+                    <div class="pillule">Netlifly</div>
+                </div>
+            </div>
+        </div>
+    </div>

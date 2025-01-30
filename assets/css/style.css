@@ -260,3 +260,16 @@ input {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
+
+.projets {
+    padding: 160px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+}
