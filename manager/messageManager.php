@@ -1,5 +1,7 @@
 <?php
 
+require_once 'manager.php';
+
 
 class MessageManager {
 

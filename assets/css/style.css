@@ -323,6 +323,131 @@ footer {
     gap: 40px;
 }
 
+.mentions-legales:hover {
+    text-decoration: var(--noir-hover) underline;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 15%;
+    border-right: 2px solid var(--blanc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 48px;
+    background-color: var(--noir);
+}
+
+.sidebar-title {
+    color: var(--blanc);
+}
+
+.sidebar-title-subtitles {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sidebar-subtitles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-subtitles-color {
+    color: var(--blanc);
+    font-size: 24px;
+}
+
+.sidebar-btn {
+    color: var(--noir);
+    background-color: var(--blanc);
+    width: 100%;
+}
+
+.message {
+    padding: 2em 1em;
+    border: 1px solid var(--gris);
+    margin: 12px 0;
+    border-radius: var(--bordure-moyenne);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.message:hover {
+    cursor: pointer;
+    opacity: 0.80;
+}
+
+.message-status {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--bordure-full);
+}
+
+.bo-sidebar-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 100vh;
+}
+
+.bo-content {
+    padding: 48px 48px 48px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.title-page-bo {
+    text-decoration: 2px underline var(--noir-hover);
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.table-header-messages {
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr 2fr;
+    background-color: var(--gris);
+    padding: 12px 20px;
+    color: var(--blanc);
+}
+
+.table-content-message {
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr 2fr;
+    width: 100%;
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--gris);
+}
+
+.message-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 40%;
+}
+
+.copyright {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.sidebar-subtitles-color:hover {
+    opacity: 0.80;
+}
+
+
+
 @media screen and (min-width: 767px) {
 
     h1 {
