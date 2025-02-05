@@ -28,14 +28,27 @@ $users = $user->selectAllUsers();
         <?php include("../inc/sidebar.php"); ?>
         <div class="bo-content">
             <h1 class="title-page-bo">Utilisateurs</h1>
+
+            <div class="table">
+                <div class="table-header-utilisateurs">
+                    <p>Nom</p>
+                    <p>Email</p>
+                </div>
+
             <?php foreach ($users as $user): ?>
-                <a class="message">
-                    ID: <?php echo htmlspecialchars($user['id']); ?>,
-                    Name: <?php echo htmlspecialchars($user['name']); ?>,
-                    Email: <?php echo htmlspecialchars($user['email']); ?>,
+
+
+                <a
+                        class="table-content-user"
+                        href="utilisateur_detail.php?id=<?php echo htmlspecialchars($user['id']); ?>"
+                    >
+                        <p><?php echo htmlspecialchars($user['name']); ?></p>
+                        <p><?php echo htmlspecialchars($user['email']); ?></p>
                 </a>
+
             <?php endforeach; ?>
         </div>
+        <p class="copyright">©Copyright 2025 - Veljko Laces</p>
     </div>
 </body>
 </html>

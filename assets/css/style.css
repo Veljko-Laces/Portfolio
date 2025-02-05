@@ -446,6 +446,40 @@ footer {
     opacity: 0.80;
 }
 
+.table-header-utilisateurs {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    background-color: var(--gris);
+    padding: 12px 20px;
+    color: var(--blanc);
+}
+
+.table-content-user {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    width: 100%;
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--gris);
+}
+
+.detail-de-utilisateur {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.infos-detail-user {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-user-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 
 
 @media screen and (min-width: 767px) {
