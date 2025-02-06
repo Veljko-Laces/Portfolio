@@ -1,6 +1,7 @@
 <?php
 
 require_once '../manager/messageManager.php';
+require_once '../manager/userManager.php';
 
 session_start();
 
@@ -12,7 +13,12 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
 if (isset($_GET['id'])) {
     $messageManager = new MessageManager();
     $message = $messageManager->selectMessageById($_GET['id']);
+
+    $userManager = new UserManager();
+    $user = $userManager->selectUserById($_GET['id']);
 }
+
+
 
 ?>
 
@@ -32,13 +38,15 @@ if (isset($_GET['id'])) {
             <div class="message-details">
                 <p><strong>ID:</strong> <?php echo htmlspecialchars($message[0]['id']); ?></p>
                 <p><strong>Message:</strong> <?php echo nl2br(htmlspecialchars($message[0]['message'])); ?></p>
-                <p><strong>User ID:</strong> <?php echo htmlspecialchars($message[0]['user_id']); ?></p>
+                <p><strong>Nom:</strong> <?php echo htmlspecialchars($user[0]['name']); ?></p>
+                <p><strong>Email:</strong> <?php echo htmlspecialchars($user[0]['email']); ?></p>
                 <p><strong>Répondu:</strong> <?php echo $message[0]['replied'] ? 'Oui' : 'Non'; ?></p>
                 <p><strong>Date de création:</strong> <?php echo htmlspecialchars($message[0]['created_at']); ?></p>
 
-                <!-- TODO ajouté un boutton pour modifier l'état du message -->
-                <!-- TODO à la place de userId il faut afficher le nom et l'email de l'utilisateur qui a envoyé le message en utilisant la méthode selectUserById -->
-                <!-- TODO faire une fonction qui rend la date plus lisible et plus compréhensive -->
+                <form action="messageHandler.php" method="post" >
+                    <input type="hidden" name="id" value="<?php echo htmlspecialchars($message[0]['id']); ?>">
+                    <button name="changeStatus">Changer le status du message</button>
+                </form>
             </div>
         </div>
     </div>

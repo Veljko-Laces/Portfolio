@@ -2,15 +2,16 @@
 
 require_once '../manager/userManager.php';
 
+session_start();
+
+if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
+    header("Location: /portfolio/admin/login.php");
+    exit;
+}
+
 
 $user = new UserManager();
 $users = $user->selectAllUsers();
-
-
-// echo '<pre>';
-// print_r($users);
-// echo '</pre>';
-
 
 ?>
 

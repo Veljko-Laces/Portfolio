@@ -41,12 +41,17 @@ $messages = $messageManager->selectAllMessage();
                 </div>
 
                 <?php foreach ($messages as $message): ?>
+                    <?php 
+                        $userManager = new UserManager();
+                        $user = $userManager->selectUserById($message['user_id']); 
+                        $userName = htmlspecialchars($user[0]['name']);
+                    ?>
                     <a
                         class="table-content-message"
                         href="message_detail.php?id=<?php echo htmlspecialchars($message['id']); ?>"
                     >
                         <div class="message-status" style="background-color: <?php echo $message['replied'] ? 'green' : 'red'; ?>;"></div>
-                        <p><?php echo htmlspecialchars($message['user_id']); ?></p>
+                        <p><?php echo $userName ?></p>
                         <p class="message-ellipsis"><?php echo htmlspecialchars($message['message']); ?></p>
                         <p><?php echo htmlspecialchars($message['created_at']); ?></p>
                     </a>

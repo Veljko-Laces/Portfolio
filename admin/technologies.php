@@ -1,5 +1,18 @@
 <?php
+require_once '../manager/manager.php';
+require_once '../manager/technologyManager.php';
+require_once '../manager/projectManager.php';
 
+session_start();
+
+if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
+    header("Location: /portfolio/admin/login.php");
+    exit;
+}
+
+
+$technologyManager = new TechnologyManager();
+$technologys = $technologyManager->selectAllTechnology();
 
 ?>
 
@@ -17,7 +30,29 @@
         <?php include("../inc/sidebar.php"); ?>
         <div class="bo-content">
             <h1 class="title-page-bo">Technologies</h1>
+
+            <div class="table">
+                <div class="table-header-projets">
+                    <p>Id</p>
+                    <p>Id du projet</p>
+                    <p>Nom de la technologie</p>
+                </div>
+
+            <?php foreach ($technologys as $technology): ?>
+
+
+                <a
+                        class="table-content-projets"
+                        href="technologie_detail.php?id=<?php echo htmlspecialchars($project['id']); ?>"
+                    >
+                        <p><?php echo htmlspecialchars($technology['id']); ?></p>
+                        <p><?php echo htmlspecialchars($technology['project_id']); ?></p>
+                        <p><?php echo htmlspecialchars($technology['technology_name']); ?></p>
+                </a>
+
+            <?php endforeach; ?>
         </div>
+        <p class="copyright">©Copyright 2025 - Veljko Laces</p>
     </div>
 </body>
 </html>
