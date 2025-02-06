@@ -13,7 +13,7 @@ class ProjectManager {
     // Récuperer un projet par rapport a l'ID
 
     public function selectProjectById($id) {
-        $select_project_by_id = "SELECT id,title, description FROM message WHERE id = '$id'";
+        $select_project_by_id = "SELECT id,title, description FROM project WHERE id = '$id'";
         $result = makeSqlRequest($select_project_by_id, true, true);
         return $result;
     }
@@ -38,8 +38,8 @@ class ProjectManager {
 
     // Modifier un projet par rapport a l'ID
     public function updateProjectById($newTitle, $newDescription, $id) {
-        $update_project_by_id = "UPDATE `project` SET `title` = '$newTitle', `description` = '$newDescription' WHERE id = '$id';";
-        $result = makeSqlRequest($update_project_by_id, true, true);
+        $update_project_by_id = "UPDATE `project` SET `title` = '$newTitle', `description` = '$newDescription' WHERE id = $id;";
+        $result = makeSqlRequest($update_project_by_id, true, false);
         return $result;
     }
 

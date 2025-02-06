@@ -50,7 +50,8 @@ class MessageManager {
 
     public function updateMessageById($id) {
         $update_message_by_id = "UPDATE message SET replied = 1 WHERE id = '$id'";
-        $result = makeSqlRequest($update_message_by_id, true, true);
+        echo $update_message_by_id;
+        $result = makeSqlRequest($update_message_by_id, true, false);
         return $result;
     }
 
