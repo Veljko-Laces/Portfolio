@@ -151,6 +151,14 @@ input {
     outline: none;
 }
 
+textarea {
+    padding: 8px 12px;
+    border-radius: var(--bordure-moyenne);
+    border: solid 1px var(--gris);
+    outline: none;
+    resize: none;
+}
+
 ::placeholder {
     color: var(--gris);
 }
@@ -196,6 +204,10 @@ input {
     gap: 60px;
     justify-content: center;
     align-items: center;
+}
+
+.a-accueil-contact {
+    color: var(--blanc);
 }
 
 .accueil-contenu {
@@ -478,6 +490,29 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.table-header-projets {
+    display: grid;
+    grid-template-columns: 2fr 4fr 6fr;
+    background-color: var(--gris);
+    padding: 12px 20px;
+    color: var(--blanc);
+}
+
+.table-content-projets {
+    display: grid;
+    grid-template-columns: 2fr 4fr 6fr;
+    width: 100%;
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--gris);
+}
+
+.projets-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
 }
 
 
