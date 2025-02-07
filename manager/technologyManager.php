@@ -34,6 +34,18 @@ class TechnologyManager {
         $result = makeSqlRequest($delete_technology_by_id, true, true);
         return $result;
     }
+    
+    // Supprimer une technologie par rapport a un project_id
+    
+    public function deleteTechnologyByProjectId($projet_id) {
+        $delete_technology_by_project_id = "DELETE FROM `technology` WHERE project_id = '$projet_id';";
+        $result = makeSqlRequest($delete_technology_by_project_id, true, false);
+        return $result;
+    }
+
+
+
+
 
     // Ajouter une technologie
 

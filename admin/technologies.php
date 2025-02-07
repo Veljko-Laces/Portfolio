@@ -34,19 +34,21 @@ $technologys = $technologyManager->selectAllTechnology();
             <div class="table">
                 <div class="table-header-projets">
                     <p>Id</p>
-                    <p>Id du projet</p>
+                    <p>Titre du projet</p>
                     <p>Nom de la technologie</p>
                 </div>
 
             <?php foreach ($technologys as $technology): ?>
-
-
+                <?php
+                    $projectManager = new ProjectManager();
+                    $projet = $projectManager->selectProjectById($technology['project_id']);
+                ?>
                 <a
                         class="table-content-projets"
-                        href="technologie_detail.php?id=<?php echo htmlspecialchars($project['id']); ?>"
+                        href="technologie_detail.php?id=<?php echo htmlspecialchars($technology['id']); ?>"
                     >
                         <p><?php echo htmlspecialchars($technology['id']); ?></p>
-                        <p><?php echo htmlspecialchars($technology['project_id']); ?></p>
+                        <p><?php echo htmlspecialchars($projet[0]['title']); ?></p>
                         <p><?php echo htmlspecialchars($technology['technology_name']); ?></p>
                 </a>
 

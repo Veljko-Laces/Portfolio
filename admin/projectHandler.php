@@ -1,12 +1,16 @@
 <?php
 require_once '../manager/projectManager.php';
 require_once '../manager/manager.php';
+require_once '../manager/technologyManager.php';
 
 
 if (isset($_POST['delete'])) {
     $projectId = $_POST['id'];
     $projectManager = new ProjectManager();
     $projectManager->deleteProjectById($projectId);
+
+    $technologyManager = new TechnologyManager(); 
+    $technologyManager->deleteTechnologyByProjectId($projectId);  
 
     header("Location: /portfolio/admin/projets.php");
     return;
