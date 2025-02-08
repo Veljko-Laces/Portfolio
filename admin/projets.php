@@ -14,9 +14,6 @@ $projectManager = new ProjectManager();
 $projects = $projectManager->selectAllProject();
 
 
-// echo '<pre>';
-// print_r($projects);
-// echo '</pre>';
 
 
 ?>
@@ -34,7 +31,7 @@ $projects = $projectManager->selectAllProject();
     <div class="bo-sidebar-content">
         <?php include("../inc/sidebar.php"); ?>
         <div class="bo-content">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div class="title-btn-add">
                 <h1 class="title-page-bo">Projets</h1>
                 <a href="add_project.php">
                     <button type="subite" name="add">Ajouter un projet</button>

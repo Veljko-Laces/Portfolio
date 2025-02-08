@@ -29,20 +29,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <h2>Connexion</h2>
-
-    <?php if (!empty($error_message)) : ?>
-        <p style="color: red;"><?php echo $error_message; ?></p>
-    <?php endif; ?>
-
-    <form method="POST" action="">
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Se connecter</button>
-    </form>
+    <div class="login-title-inputs">
+        <h2>Connexion</h2>
+    
+        <?php if (!empty($error_message)) : ?>
+            <p style="color: red;"><?php echo $error_message; ?></p>
+        <?php endif; ?>
+    
+        <form method="POST" action="">
+                <div class="login-inputs">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Se connecter</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

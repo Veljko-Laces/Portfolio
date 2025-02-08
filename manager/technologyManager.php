@@ -43,16 +43,19 @@ class TechnologyManager {
         return $result;
     }
 
-
-
-
-
     // Ajouter une technologie
 
     
     public function addTechnology( $id, $technology_name ,$project_id) {
         $add_technology = "INSERT INTO `technology` (`id` , `project_id` , `technology_name` ) VALUES ('$id','$technology_name','$project_id');";
         $result = makeSqlRequest($add_technology, true, true);
+        return $result;
+    }
+
+    // Modifier une etchno par rapport a l'id
+    public function updateTechnolgyById($newTechnologyName, $id) {
+        $update_project_by_id = "UPDATE `technology` SET `technology_name`='$newTechnologyName' WHERE id = '$id';";
+        $result = makeSqlRequest($update_project_by_id, true, false);
         return $result;
     }
 

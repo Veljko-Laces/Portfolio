@@ -15,7 +15,7 @@ if (isset($_GET['id'])) {
     $message = $messageManager->selectMessageById($_GET['id']);
 
     $userManager = new UserManager();
-    $user = $userManager->selectUserById($_GET['id']);
+    $user = $userManager->selectUserById($message[0]['user_id']);
 }
 
 

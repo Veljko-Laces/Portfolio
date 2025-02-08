@@ -29,8 +29,12 @@ $technologys = $technologyManager->selectAllTechnology();
     <div class="bo-sidebar-content">
         <?php include("../inc/sidebar.php"); ?>
         <div class="bo-content">
-            <h1 class="title-page-bo">Technologies</h1>
-
+            <div class="title-btn-add">
+                <h1 class="title-page-bo">Technologies</h1>
+                <a href="add_technology.php">
+                    <button type="subite" name="add-techno">Ajouter une technologie</button>
+                </a>
+            </div>
             <div class="table">
                 <div class="table-header-projets">
                     <p>Id</p>
