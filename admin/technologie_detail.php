@@ -14,11 +14,8 @@ if (isset($_GET['id'])) {
     $technolgyManager = new TechnologyManager();
     $technology = $technolgyManager->selectTechnologyById($_GET['id']);
 
-    print_r($technology);
-
     $projectManager = new ProjectManager();
     $project = $projectManager->selectProjectById($_GET['id']);
-
 
 }
 

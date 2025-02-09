@@ -30,8 +30,8 @@ class UserManager {
 
     // Ajouter un user
 
-    public function addUser($name ,$email) {
-        $add_message = "INSERT INTO `user`(`name`, `email`) VALUES ('$name','$email')";
+    public function addUser($id, $name ,$email) {
+        $add_message = "INSERT INTO `user`(`id`, `name`, `email`) VALUES ('$id','$name','$email')";
         $result = makeSqlRequest($add_message, true, true);
         return $result;
     }
