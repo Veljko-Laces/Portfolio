@@ -31,6 +31,7 @@ if (isset($_GET['id'])) {
 </head>
 <body>
     <div class="bo-sidebar-content">
+        <?php include("../inc/sidebar.php"); ?>
         <div class="bo-content">
             <h1 class="title-page-bo">Détails de la technologie</h1>
             <form action="technologyHandler.php" method="POST" class="projets-details">
