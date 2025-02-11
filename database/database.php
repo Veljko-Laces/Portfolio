@@ -5,7 +5,7 @@ Class Database {
 
     public function initDatabase() {
     
-        $portfolio_db = "CREATE DATABASE IF NOT EXISTS portfolio_db";
+        $portfolio_db = "CREATE DATABASE IF NOT EXISTS veljkokveljkolcs";
         makeSqlRequest($portfolio_db, false, false);
     
         $create_table_admin = "CREATE TABLE IF NOT EXISTS admin (

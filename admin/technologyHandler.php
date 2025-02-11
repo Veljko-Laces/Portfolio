@@ -8,7 +8,7 @@ if(isset($_POST['delete-techno'])){
     $technologyManager = new TechnologyManager();
     $technologyManager->deleteTechnologyById($technolyId);
 
-    header("Location: /portfolio/admin/technologies.php");
+    header("Location: /admin/technologies.php");
 
     exit; 
 
@@ -22,7 +22,7 @@ if(isset($_POST['update-techno'])){
     $technologyManager = new TechnologyManager();
     $technologyManager->updateTechnolgyById($newTechnologyName, $technologyId);
 
-    header("Location: /portfolio/admin/technologie_detail.php?id=" . $technologyId);
+    header("Location: /admin/technologie_detail.php?id=" . $technologyId);
     exit; 
 
     return;
@@ -38,7 +38,7 @@ if (isset($_POST['add-techno'])) {
     $technologyManager = new TechnologyManager();
     $technologyManager->addTechnology($technologyId, $projectId, $newTechnologyName);
 
-    header("Location: /portfolio/admin/technologies.php");
+    header("Location: /admin/technologies.php");
     exit; 
 
     return;

@@ -12,7 +12,7 @@ if(isset($_POST['send-form'])){
     $newUserMessage = $_POST['add-message'];
 
     if (!$newUserName || !$newUserEmail || !$newUserMessage) {
-        header("Location: /portfolio/index.php#contact");
+        header("Location: /index.php#contact");
         return;
     }
 
@@ -22,7 +22,7 @@ if(isset($_POST['send-form'])){
     $messageManager = new MessageManager();
     $addMessage = $messageManager->addMessage($newMessageId, $newUserId, $newUserMessage);
 
-    header("Location: /portfolio/index.php#contact");
+    header("Location: /index.php#contact");
 
     return;
 }

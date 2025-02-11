@@ -2,16 +2,15 @@
 
 function makeSqlRequest($sqlRequest, $useDatabase, $fetchResults){
     $engine = "mysql";
-    $host = "localhost";
-    $port = 3306;
-    $dbName = "portfolio_db";
-    $username = "root";
-    $password = "";
+    $host = "veljkokveljkolcs.mysql.db";
+    $dbName = "veljkokveljkolcs";
+    $username = "veljkokveljkolcs";
+    $password = "Velj3nevolj3";
 
     try {
         $dsn = $useDatabase 
-            ? "$engine:host=$host;port=$port;dbname=$dbName" 
-            : "$engine:host=$host;port=$port";
+            ? "$engine:host=$host;dbname=$dbName" 
+            : "$engine:host=$host";
         $pdo = new PDO($dsn, $username, $password);
 
         if ($fetchResults) {

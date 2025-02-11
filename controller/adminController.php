@@ -13,12 +13,12 @@ class AdminController {
         if (!$user || !password_verify($password, $user[0]['password'])) {
             $_SESSION["error_message"] = "Email ou mot de passe incorrect";
             $_SESSION["user_logged_in"] = false;
-            header("Location: /portfolio/admin/login.php");
+            header("Location: /admin/login.php");
             exit;
         }
     
         $_SESSION["user_logged_in"] = true;
-        header("Location: /portfolio/admin/index.php");
+        header("Location: /admin/index.php");
         exit;
     }
 
@@ -26,7 +26,7 @@ class AdminController {
         session_start();
         session_destroy();
         $_SESSION["user_logged_in"] = false;
-        header("Location: /portfolio/admin/login.php");
+        header("Location: /admin/login.php");
         exit;
     }
 }

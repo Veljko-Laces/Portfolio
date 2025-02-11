@@ -15,12 +15,12 @@
         <a href="index.php#competences">Compétences</a>
         <a href="index.php#projets">Projets</a>
         <a href="index.php#contact">Contact</a>
-        <img src="./assets/images/svg/lune.svg" alt="" class="icones" id="change-mode">
+        <img src="./assets/images/svg/lune.svg" alt="Icône de lune pour mode sombre" class="icones" id="change-mode">
     </nav>
     <div class="mentions-legales-container">
         <div class="titre-page-mentions-legales">
             <button class="accueil-btn">
-                <a href="./index.php" class="TEXT-base-boutton a-accueil-contact">Revenir a l'acceuil</a>
+                <a href="./index.php" class="TEXT-base-boutton a-accueil-contact">Revenir à l'acceuil</a>
             </button>
             <h1 class="titre-mentions">Mentions légales</h1>
         </div>
