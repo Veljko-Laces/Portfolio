@@ -1,7 +1,21 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-# Si la connexion n'est pas en HTTPS
-RewriteCond %{HTTPS} off
-# Redirige vers la version HTTPS en conservant l'URL
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Forcer HTTPS
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Rediriger /api vers /admin/login.php
+RewriteRule ^api/?$ admin/login.php [L]
+
+#SUpprimer le .PHP
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ $1.php [L]
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+
 </IfModule>

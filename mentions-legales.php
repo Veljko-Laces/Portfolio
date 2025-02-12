@@ -20,7 +20,7 @@
     <div class="mentions-legales-container">
         <div class="titre-page-mentions-legales">
             <button class="accueil-btn">
-                <a href="./index.php" class="TEXT-base-boutton a-accueil-contact">Revenir à l'acceuil</a>
+                <a href="./index" class="TEXT-base-boutton a-accueil-contact">Revenir à l'acceuil</a>
             </button>
             <h1 class="titre-mentions">Mentions légales</h1>
         </div>

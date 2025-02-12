@@ -12,7 +12,18 @@ $db->initDatabase();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="title" content="Portfolio LACES Veljko">
+    <title>Développeur Web Full-Stack à Paris | Alternant & Stagiaire en Développement web</title>
+    <meta name="description" content="Découvrez mon portfolio de développeur web Full-Stack basé à Paris. Disponible pour une alternance ou un stage en développement web.">
+    <meta name="author" content="Veljko LACES">
+    <meta name="keywords" content="portfolio developpeur web, developpeur web alternance, developpeur web stage, developpeur web etudiant paris,developpeur web paris, veljko laces">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="./assets/images/svg/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/svg/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/svg/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/svg/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Veljko Laces" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,10 +152,10 @@ $db->initDatabase();
             <div class="card">
                 <div class="content">
                     <div class="card-title-redirection">
-                        <h3>Title</h3>
-                        <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="Icône flèche vers le haut à droite, lien vers le projet" class="icones"></a>
+                        <h3>F8 - TRIBUTO</h3>
+                        <a href="https://ferrari-f8-tributo.netlify.app/" target="_blank"><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="Icône flèche vers le haut à droite, lien vers le projet" class="icones"></a>
                     </div>
-                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                    <p class="text-base description-projet">F8 - TRIBUTO est un site vitrine dédié à la Ferrari F8 Tributo, une supercar emblématique qui allie puissance, design et innovation. </p>
                 </div>
                 <div class="card-skills">
                     <div class="pillule">HTML</div>
@@ -155,43 +166,48 @@ $db->initDatabase();
             <div class="card">
                 <div class="content">
                     <div class="card-title-redirection">
-                        <h3>Title</h3>
-                        <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="Icône flèche vers le haut à droite, lien vers le projet" class="icones"></a>
+                        <h3>TODO REST API</h3>
+                        <a href="https://github.com/Veljko-Laces/todo-rest-api" target="_blank"><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="Icône flèche vers le haut à droite, lien vers le projet" class="icones"></a>
                     </div>
-                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                    <p class="text-base description-projet">Conception et développement d’une API REST de gestion de tâches avec PHP et MySQL, pour simplifier l’organisation et le suivi des tâches des
+                    utilisateurs.</p>
                 </div>
                 <div class="card-skills">
-                    <div class="pillule">HTML</div>
-                    <div class="pillule">CSS</div>
-                    <div class="pillule">Netlifly</div>
+                    <div class="pillule">PHP</div>
+                    <div class="pillule">MySQL</div>
+                    <div class="pillule">BRUNO</div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <div class="card-title-redirection">
-                        <h3>Title</h3>
+                        <h3>BookReview - Plateforme de Critiques de Livres</h3>
                         <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="Icône flèche vers le haut à droite, lien vers le projet" class="icones"></a>
                     </div>
-                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                    <p class="text-base description-projet">BookReview est un site web où les utilisateurs peuvent découvrir, noter et commenter des livres.</p>
                 </div>
                 <div class="card-skills">
                     <div class="pillule">HTML</div>
                     <div class="pillule">CSS</div>
-                    <div class="pillule">Netlifly</div>
+                    <div class="pillule">JAVASCRIPT</div>
+                    <div class="pillule">PHP</div>
+                    <div class="pillule">MySQL</div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <div class="card-title-redirection">
-                        <h3>Title</h3>
+                        <h3>FoodOrder - Site de Commande de Repas en Ligne</h3>
                         <a href=""><img src="./assets/images/svg/arrow-top-right-on-square-20-solid.svg" alt="Icône flèche vers le haut à droite, lien vers le projet" class="icones"></a>
                     </div>
-                    <p class="text-base description-projet">Budgeto is an app that help you count your expenses.</p>
+                    <p class="text-base description-projet">FoodOrder est une plateforme qui permet aux restaurants de proposer leurs menus en ligne et aux clients de commander des repas à emporter ou en livraison. </p>
                 </div>
                 <div class="card-skills">
-                    <div class="pillule">HTML</div>
+                <div class="pillule">HTML</div>
                     <div class="pillule">CSS</div>
-                    <div class="pillule">Netlifly</div>
+                    <div class="pillule">JAVASCRIPT</div>
+                    <div class="pillule">PHP</div>
+                    <div class="pillule">MySQL</div>
                 </div>
             </div>
         </div>
@@ -208,17 +224,17 @@ $db->initDatabase();
                 <form action="./admin/formHandler.php" method="post">
                     <div class="champ">
                         <div class="champ-label">
-                            <label for="Nom" class="text-base">Nom</label>
+                            <label for="add-name" class="text-base">Nom</label>
                             <input type="text" placeholder="Entrez votre nom" name="add-name" id="add-name">
                             <div id="nom-erreur"></div>
                         </div>
                         <div class="champ-label">
-                            <label for="Email" class="text-base">Email</label>
+                            <label for="add-email" class="text-base">Email</label>
                             <input type="email" placeholder="Entrez votre email" name="add-email" id="add-email">
                             <div id="email-erreur"></div>
                         </div>
                         <div class="champ-label">
-                            <label for="Message" class="text-base">Message</label>
+                            <label for="add-message" class="text-base">Message</label>
                             <input type="text" placeholder="Rédigez votre message" name="add-message" id="add-message">
                             <div id="message-erreur"></div>
                         </div>
@@ -248,7 +264,7 @@ $db->initDatabase();
     </div>
     <footer>
         <p class="text-base">Conçu et réalisé avec passion par Veljko Laces.</p>
-        <a href="./mentions-legales.php" class="mentions-legales">Mentions légales</a>
+        <a href="./mentions-legales" class="mentions-legales">Mentions légales</a>
         <p class="text-base">©Copyright 2025 - Veljko Laces</p>
     </footer>
     <script src="./assets/js/app.js"></script>

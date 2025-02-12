@@ -339,7 +339,7 @@ footer {
 }
 
 .titre {
-    color: var(--gris);
+    color: var(--noir);
 }
 
 .a-accueil-contact {
@@ -349,7 +349,7 @@ footer {
 }
 
 .titre-mentions {
-    text-decoration: underline var(--noir-hover) 2px;
+    text-decoration: underline var(--noir) 2px;
 }
 
 @media screen and (min-width: 767px) {

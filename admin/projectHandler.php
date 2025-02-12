@@ -12,7 +12,7 @@ if (isset($_POST['delete'])) {
     $technologyManager = new TechnologyManager(); 
     $technologyManager->deleteTechnologyByProjectId($projectId);  
 
-    header("Location: /admin/projets.php");
+    header("Location: /admin/projets");
     return;
 }
 
@@ -23,7 +23,7 @@ if (isset($_POST['update'])) {
     $projectManager = new ProjectManager();
     $projectManager->updateProjectById($newTitle,$newDescritpion,$projectId);
 
-    header("Location: /admin/projet_detail.php?id=" . $projectId);
+    header("Location: /admin/projet_detail?id=" . $projectId);
 
     return;
 }
@@ -35,7 +35,7 @@ if (isset($_POST['add'])) {
     $projectManager = new ProjectManager();
     $projectManager->addProject($projectId, $newTitle, $newDescritpion);
 
-    header("Location: /admin/projets.php");
+    header("Location: /admin/projets");
 
     return;
 }

@@ -6,7 +6,7 @@ require_once '../manager/projectManager.php';
 session_start();
 
 if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
-    header("Location: /admin/login.php");
+    header("Location: /admin/login");
     exit;
 }
 
@@ -31,7 +31,7 @@ $technologys = $technologyManager->selectAllTechnology();
         <div class="bo-content">
             <div class="title-btn-add">
                 <h1 class="title-page-bo">Technologies</h1>
-                <a href="add_technology.php">
+                <a href="add_technology">
                     <button type="subite" name="add-techno">Ajouter une technologie</button>
                 </a>
             </div>

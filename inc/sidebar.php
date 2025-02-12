@@ -15,10 +15,10 @@
             <div class="sidebar-title-subtitles">
                 <h2 class="sidebar-title">Admin</h2>
                 <div class="sidebar-subtitles">
-                    <a href="../admin/index.php" class="sidebar-subtitles-color">Messages</a>
-                    <a href="../admin/utilisateurs.php" class="sidebar-subtitles-color">Utilisateurs</a>
-                    <a href="../admin/projets.php" class="sidebar-subtitles-color">Projects</a>
-                    <a href="../admin/technologies.php" class="sidebar-subtitles-color">Technologies</a>
+                    <a href="../admin/index" class="sidebar-subtitles-color">Messages</a>
+                    <a href="../admin/utilisateurs" class="sidebar-subtitles-color">Utilisateurs</a>
+                    <a href="../admin/projets" class="sidebar-subtitles-color">Projects</a>
+                    <a href="../admin/technologies" class="sidebar-subtitles-color">Technologies</a>
                 </div>
             </div>
             <div>

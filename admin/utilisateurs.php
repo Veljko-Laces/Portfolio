@@ -5,7 +5,7 @@ require_once '../manager/userManager.php';
 session_start();
 
 if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
-    header("Location: /admin/login.php");
+    header("Location: /admin/login");
     exit;
 }
 

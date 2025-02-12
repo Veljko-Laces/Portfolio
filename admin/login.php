@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $adminController->login($email, $password);
     } else {
         $_SESSION["error_message"] = "Veuillez remplir tous les champs.";
-        header("Location: login.php");
+        header("Location: login");
         exit;
     }
 }

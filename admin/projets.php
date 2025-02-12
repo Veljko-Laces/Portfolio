@@ -5,7 +5,7 @@ require_once '../manager/projectManager.php';
 session_start();
 
 if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
-    header("Location: /admin/login.php");
+    header("Location: /admin/login");
     exit;
 }
 
@@ -33,7 +33,7 @@ $projects = $projectManager->selectAllProject();
         <div class="bo-content">
             <div class="title-btn-add">
                 <h1 class="title-page-bo">Projets</h1>
-                <a href="add_project.php">
+                <a href="add_project">
                     <button type="subite" name="add">Ajouter un projet</button>
                 </a>
             </div>  
