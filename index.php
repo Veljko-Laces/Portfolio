@@ -18,12 +18,15 @@ $db->initDatabase();
     <meta name="author" content="Veljko LACES">
     <meta name="keywords" content="portfolio developpeur web, developpeur web alternance, developpeur web stage, developpeur web etudiant paris,developpeur web paris, veljko laces">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" href="./assets/images/svg/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./assets/images/svg/favicon.svg" />
     <link rel="shortcut icon" href="./assets/images/svg/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/svg/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Veljko Laces" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +55,7 @@ $db->initDatabase();
                 </button>
                 <button class="accueil-btn">
                     <img src="./assets/images/svg/linkedin.svg" class="icones" alt="Icône LinkedIn, réseau social professionnel">
-                    <a href="" class="TEXT-base-boutton a-accueil-contact" target="_blank">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/veljko-laces-557003351/" class="TEXT-base-boutton a-accueil-contact" target="_blank">Linkedin</a>
                 </button>
                 <button class="accueil-btn">
                     <img src="./assets/images/svg/mail.svg" alt="Icône d'email, symbole de messagerie électronique" class="icones">
@@ -248,7 +251,7 @@ $db->initDatabase();
                     </button>
                     <button class="accueil-btn">
                         <img src="./assets/images/svg/linkedin.svg" class="icones" alt="Icône LinkedIn, réseau social professionnel">
-                        <a href="" class="TEXT-base-boutton a-accueil-contact" target="_blank">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/veljko-laces-557003351/" class="TEXT-base-boutton a-accueil-contact" target="_blank">Linkedin</a>
                     </button>
                     <button class="accueil-btn">
                         <img src="./assets/images/svg/mail.svg" alt="Icône d'email, symbole de messagerie électronique" class="icones">
@@ -265,9 +268,22 @@ $db->initDatabase();
     <footer>
         <p class="text-base">Conçu et réalisé avec passion par Veljko Laces.</p>
         <a href="./mentions-legales" class="mentions-legales">Mentions légales</a>
-        <p class="text-base">©Copyright 2025 - Veljko Laces</p>
+        <p class="text-base">Copyright 2025 - Veljko Laces</p>
     </footer>
     <script src="./assets/js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker enregistré avec succès:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Erreur lors de l\'enregistrement du Service Worker:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
